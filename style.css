@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+}
+.fundo {
+    z-index: -9;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+.text-header {
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    left: 10px;
+    color: #242324;
+    font-size: 18px;
+}
+.insta {
+    position: relative;
+    left: 10px;
+    
+}
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: -15px;
+}
+.botão-home {
+    width: 170px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: #FF69B4;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 17px;
+    
+}
+.work {
+    font-size: 13px;
+}
+.botão-home:active {
+    width: 180px;
+    height: 50px;
+    transition: 0.6s;
+}
+#link-chame{
+    text-decoration: none;
+    color: inherit;
+}
+.home-image {
+    width: 22vw;
+    height: 13vh;
+    border-radius: 60px;
+
+}
+.home-image:hover {
+    width: 30vw;
+    height: 18vh;
+}
+.galery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#galery-one {
+    position: relative;
+    bottom: 13px;
+    top: 0px;
+}
+#galery-two {
+    position: relative;
+    top: 10px;
+    z-index: 99;
+}
+
+.balao{
+    background-color: #ffff;
+    width: 145px;
+    border-radius: 15px;
+    position: relative;
+    top: 270px;
+    left: 180px;
+    padding-left: 2px;
+    visibility: hidden;
+    transition: 0.2s;
+}
+
+.icone-mag {
+    position: fixed;
+    z-index: -2;
+}
+.icone {
+    width: 50%;
+    position: fixed;
+    top: 345px;
+    left: 215px;
+}
+h1 {
+    font-size: 45px;
+}
+h2 {
+    font-size: 20px;
+}
+.rodapé {
+    position: fixed;
+    display: flex;
+    font-size: 14px;
+    margin-left: 20px;
+    top: 510px;
+}
+.list-one {
+    margin-right: 25px;
+}
+
+@media screen and (max-height: 812px) {
+    .rodapé {
+        top: 105px;
+        position: relative;
+    }
+    .icone {
+        top: 170px;
+       position: relative;
+    }
+    #galery-one {
+        top: 15px;
+    }
+    
+    #galery-two {
+        top: 25px;
+    }
+    .home-image {
+        height: 18vh;
+        width: 24vw;
+    }
+    .home-image:hover {
+        height: 25vh;
+        width: 34vw;
+    }
+    .balao{
+        top: 290px;
+    }
+}
+@media (min-width: 410px){
+    .rodapé{
+        position: fixed;
+        top: 645px;
+    }
+    .icone{
+        top: 240px;
+        left: 275px;
+    }
+    .balao{
+        top: 350px;
+        left: 225px;
+    }
+
+}
+
+@media (max-width: 376px){
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    .text {
+        font-size: 12px;
+    }
+    .rodapé{
+        font-size: 15px;
+        top: 130px;
+        position: relative;
+    }
+    .icone{
+        position: relative;
+        top: 185px;
+        left: 230px;
+        
+    }
+}
+
