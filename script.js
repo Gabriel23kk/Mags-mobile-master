@@ -1,12 +1,28 @@
-const icon = document.querySelector(".icone")
-const div = document.querySelector(".balao")
+                //abrir menu lateral//
+const button = document.querySelector(".btn-menu");
+const menu  = document.querySelector(".hidden")
 
-icon.addEventListener("mouseover", aparecerDiv)
-function aparecerDiv(){
-    div.style.visibility = "visible"
+button.addEventListener("click", menuD)
+function menuD(){
+    menu.style.width = "190px";
+}
+                //fechar menu lateral//
+const closeButton = document.querySelector(".x")
+
+closeButton.addEventListener("click", closeMenu)
+function closeMenu(){
+    menu.style.width = "0px";
 }
 
-icon.addEventListener("mouseleave", sumirDiv)
-function sumirDiv(){
-    div.style.visibility = "hidden"
+                //Trocar Imagens//
+const buttonLeft = document.querySelector(".button-left")
+const buttonRight = document.querySelector(".button-right")
+
+buttonLeft.addEventListener("click", nextImage)
+function nextImage(){
+    console.log("olá")
+}
+buttonRight.addEventListener("click", previousImage)
+function previousImage(){
+    console.log("olá")
 }
