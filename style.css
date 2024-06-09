@@ -5,7 +5,13 @@
     outline: none;
     font-family: "Yantramanav", sans-serif;
 }
+/*  background-color: #f898f879 
+ background-color: #ffbaff;*/
 
+ body {
+    background: linear-gradient(160deg, #ffffff, #ffbaff);
+    height: 150vh;
+ }
 .icon{
     position: relative;
     width: 60px;
@@ -71,7 +77,7 @@ h1 {
     top: 10px;
 }
 .color-rosa {
-    background-color: #ffbaff;
+   
     height: 345px;
     border-radius: 10px;
 }
@@ -126,25 +132,13 @@ h3 {
     opacity: 1;
     
 }
-.galery{
-    background-color: #f898f879;
-    
-}
-.img-services {
-    animation: appear 2s;
-    animation-timeline: scroll();
-    width: 60vw;
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto;
-}
 .left-right{
     display: flex;
     justify-content: space-between;
      .button-left{
         position: relative;
         width: 40px;
-        bottom: 230px;
+        bottom: 200px;
         left: 10px;
         border-radius: 20px;
         background-color:  #ffbaff;
@@ -153,7 +147,7 @@ h3 {
      }
      .button-right{
         position: relative;
-        bottom: 230px;
+        bottom: 200px;
         width: 40px;
         right: 10px;
         border-radius: 20px;
@@ -187,6 +181,24 @@ h3 {
 .btn-menu {
     border: none;
 }
-.boxImage {
-    
+
+.galery{
+    width: 70vw;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    left: 15%;
+    border-radius: 20px;
 }
+.boxImage {
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+    display: flex;
+     img{
+        width:70vw;
+        object-fit: cover;
+    }
+}
+
+
+

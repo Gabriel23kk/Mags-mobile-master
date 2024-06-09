@@ -17,11 +17,20 @@ function closeMenu(){
                 //Trocar Imagens//
 const buttonLeft = document.querySelector(".button-left")
 const buttonRight = document.querySelector(".button-right")
+const imgs = document.querySelector(".boxImage")
+const imageAlter = document.querySelectorAll(".boxImage img")
 
-buttonLeft.addEventListener("click", nextImage)
+let value = 0
+
 function nextImage(){
-    console.log("olá")
+    value++;
+    if(value > imageAlter.length - 1){
+        value = 0
+    }
+    imgs.style.transform = `translateX(${-value * 262.5}px)`
 }
+
+setInterval(nextImage, 1800)
 buttonRight.addEventListener("click", previousImage)
 function previousImage(){
     console.log("olá")
