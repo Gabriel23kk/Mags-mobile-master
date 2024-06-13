@@ -27,7 +27,7 @@ function nextImage(){
     if(value > imageAlter.length - 1){
         value = 0
     }
-    imgs.style.transform = `translateX(${-value * 262.5}px)`
+    imgs.style.transform = `translateX(${-value * 70}vw)`
 }
 
 setInterval(nextImage, 1800)

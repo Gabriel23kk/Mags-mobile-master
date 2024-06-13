@@ -16,14 +16,14 @@
  }
 .icon{
     position: relative;
-    width: 60px;
-    left: 440%;
+    width: 15vw;
+    
 }
 .Cabeçalho{
     display: flex;
     box-shadow: 1px 1px 20px #000000;
     position: sticky;
-    
+    justify-content: space-between;
     top: 0;
     z-index: 2;
     background-color: #f9f5f5;
