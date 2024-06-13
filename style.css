@@ -249,6 +249,7 @@ h3 {
      img{
         width:70vw;
         object-fit: cover;
+        border-radius: 15px;
     }
 }
 

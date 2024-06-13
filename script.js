@@ -30,7 +30,7 @@ function nextImage(){
     imgs.style.transform = `translateX(${-value * 70}vw)`
 }
 
-setInterval(nextImage, 1800)
+setInterval(nextImage, 1500)
 buttonRight.addEventListener("click", previousImage)
 function previousImage(){
     console.log("olá")
