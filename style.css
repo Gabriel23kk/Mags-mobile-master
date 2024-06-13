@@ -9,8 +9,9 @@
  background-color: #ffbaff;*/
 
  body {
-    background: linear-gradient(160deg, #ffffff, #ffbaff);
+    background: linear-gradient(160deg, #f6e2f9, #ffbaff);
     height: 150vh;
+    z-index: -10;
  }
 .icon{
     position: relative;
@@ -27,31 +28,80 @@
     background-color: #f9f5f5;
 }
 nav {
-    height: 100%;
+    height: 352px;
     width: 0px;
+    border: solid 2px #000000;
+    border-top: none;
+    border-left: none;
     background-color: 	#ffd4ff;
+    border-radius: 8px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 3;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     transition: width 0.3s;
+    gap: 10px;
+    
+    overflow: hidden;
 }
 .x {
-    width: 60px;
+    width: 10px;
+    height: 20px;
+    position: relative;
+    
     background-color: transparent;
     border: none;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+}
+.icon-x{
+    position: relative;
+    width: 50px;
+}
+.produtos{
+    position: relative;
+    width: 80px;
+    top: -80px;
+    left: 100px;
 }
 .x:active {
     opacity: 0.8;
 }
 .links{
-    font-size: 25px;
+    position: relative;
+    top: -75px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Vollkorn", serif;
     text-decoration: none;
     color: #000000;
+    white-space: nowrap;
+    left: 5px;
+    
+}
+#fotos::before{
+    content: "📸";
+    margin-right: 7px;
+} 
+#custo::before{
+    content: "💲";
+    margin-right: 14px;
+    padding-left: 5px;
+}
+#limpeza::before{
+    content: "🧼";
+    margin-right: 7px;
+    padding-left: 2px;
+}
+.rose-icon{
+    position: relative;
+    white-space: nowrap;
+    object-fit: fill;
+    width: 165px;
+    left: 20px;
+    top: -102px;
+    
 }
 .menu {
     position: relative;
@@ -74,7 +124,7 @@ h1 {
     width: 40%;
     position: relative;
     left: 60%;
-    top: 10px;
+    top: 22px;
 }
 .color-rosa {
    
@@ -189,6 +239,7 @@ h3 {
     position: relative;
     left: 15%;
     border-radius: 20px;
+    margin-bottom: 50px;
 }
 .boxImage {
     transition: transform 0.5s ease-in-out;
@@ -199,6 +250,5 @@ h3 {
         object-fit: cover;
     }
 }
-
 
 
