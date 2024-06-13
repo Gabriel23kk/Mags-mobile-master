@@ -4,6 +4,7 @@
     box-sizing: border-box;
     outline: none;
     font-family: "Yantramanav", sans-serif;
+    overflow: hidden;
 }
 /*  background-color: #f898f879 
  background-color: #ffbaff;*/
