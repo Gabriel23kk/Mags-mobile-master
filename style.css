@@ -6,19 +6,22 @@
     font-family: "Yantramanav", sans-serif;
     
 }
+
 /*  background-color: #f898f879 
  background-color: #ffbaff;*/
 
- body {
+body {
     background: linear-gradient(160deg, #f6e2f9, #ffbaff);
     height: 150vh;
     z-index: -10;
  }
+
 .icon{
     position: relative;
     width: 15vw;
     
 }
+
 .Cabeçalho{
     display: flex;
     box-shadow: 1px 1px 20px #000000;
@@ -28,7 +31,8 @@
     z-index: 2;
     background-color: #f9f5f5;
 }
-nav {
+
+nav{
     height: 352px;
     width: 0px;
     border: solid 2px #000000;
@@ -47,6 +51,7 @@ nav {
     
     overflow: hidden;
 }
+
 .x {
     width: 10px;
     height: 20px;
@@ -66,9 +71,11 @@ nav {
     top: -80px;
     left: 100px;
 }
+
 .x:active {
     opacity: 0.8;
 }
+
 .links{
     position: relative;
     top: -75px;
@@ -81,20 +88,23 @@ nav {
     left: 5px;
     
 }
+
 #fotos::before{
     content: "📸";
     margin-right: 7px;
-} 
+}
+
 #custo::before{
     content: "💲";
-    margin-right: 14px;
-    padding-left: 5px;
+    margin-right: 7px;
 }
+
 #limpeza::before{
     content: "🧼";
-    margin-right: 7px;
+    margin-right: 4px;
     padding-left: 2px;
 }
+
 .rose-icon{
     position: relative;
     white-space: nowrap;
@@ -104,6 +114,7 @@ nav {
     top: -102px;
     
 }
+
 .menu {
     position: relative;
     top: 10px;
@@ -111,6 +122,7 @@ nav {
     z-index: 4;
     border: none;
 }
+
 .close-menu{
     border-radius: 10px;
 }
@@ -127,6 +139,7 @@ h1 {
     left: 60%;
     top: 22px;
 }
+
 .color-rosa {
    
     height: 345px;
@@ -169,9 +182,11 @@ input {
 input:active {
     background-color: 	#838383;
 }
+
 input::placeholder {
     color: #ffffff;
 }
+
 h3 {
     margin-top: 10px;
    text-align: center;
@@ -179,10 +194,12 @@ h3 {
    font-weight: 500;
    font-family: "Titan One", sans-serif;
 }
+
 .hidden {
     opacity: 1;
     
 }
+
 .left-right{
     display: flex;
     justify-content: space-between;
@@ -209,7 +226,8 @@ h3 {
 }
 .button-left:active{
     background-color:  #bc73bc;
- }
+}
+
 .button-right:active {
     background-color:  #bc73bc;
 }
@@ -219,6 +237,7 @@ h3 {
     animation-timeline: scroll();
     
 }
+
 @keyframes appear {
     from {
         opacity: 0;
@@ -229,6 +248,7 @@ h3 {
         translate: 0 0;
     }
 }
+
 .btn-menu {
     border: none;
 }
@@ -242,15 +262,35 @@ h3 {
     border-radius: 20px;
     margin-bottom: 50px;
 }
+
 .boxImage {
     transition: transform 0.5s ease-in-out;
     transform: translateX(0);
     display: flex;
      img{
         width:70vw;
-        object-fit: cover;
-        border-radius: 15px;
+        object-fit: contain;
+        /* border-radius: 15px; */
     }
 }
 
+@media screen and (min-height: 350px){
+    .galery{
+        height: 90vh;
+    }
 
+    body{
+        width: 100vw;
+        height: 300vh;
+    }
+
+    .Cabeçalho{
+        
+        height: 15vh !important;
+    }
+
+    .Cabeçalho .icon{
+        width: 8vw;
+
+    }
+}
