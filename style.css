@@ -274,7 +274,7 @@ h3 {
     }
 }
 
-@media screen and (min-height: 350px){
+@media screen and (max-height: 350px){
     .galery{
         height: 90vh;
     }
@@ -286,7 +286,7 @@ h3 {
 
     .Cabeçalho{
         
-        height: 15vh !important;
+        height: 15vh;
     }
 
     .Cabeçalho .icon{
