@@ -274,7 +274,8 @@ h3 {
     }
 }
 
-@media screen and (max-height: 350px){
+@media screen and (max-height: 300px){
+
     .galery{
         height: 90vh;
     }
@@ -293,4 +294,20 @@ h3 {
         width: 8vw;
 
     }
+}
+
+
+#banana{
+    position: relative;
+    font-size: clamp(1em, 1em + 1vw, 1.5em);
+
+    top: 15vh;
+}
+
+#mag{
+    font-family: 'Brush Script MT', cursive;
+    font-size: clamp(3em, 3em + 3vw, 3.5em);
+
+    position: relative;
+    left: 5vw;
 }
