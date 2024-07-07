@@ -131,13 +131,29 @@ h1 {
     position: relative;
     top: 30px;
     z-index: 1;
+    font-size: 55px;
+    font-weight: 600;
+    left: 10%;
+    font-family: "Dancing Script", sans-serif;
+}
+.texto{
+    position: relative;
+    top: 70px;
+    left: 2%;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "Dancing Script", sans-serif;
 }
 
 .logo2 {
-    width: 40%;
+    width: 300px; 
+}
+.container-img{
+    width: 20px;
+    height: 180px;
     position: relative;
-    left: 60%;
-    top: 22px;
+    top: -100px;
+    left: 40%;
 }
 
 .color-rosa {
@@ -200,30 +216,7 @@ h3 {
     
 }
 
-.left-right{
-    display: flex;
-    justify-content: space-between;
-     .button-left{
-        position: relative;
-        width: 40px;
-        bottom: 200px;
-        left: 10px;
-        border-radius: 20px;
-        background-color:  #ffbaff;
-        border: none;
-        cursor: pointer;
-     }
-     .button-right{
-        position: relative;
-        bottom: 200px;
-        width: 40px;
-        right: 10px;
-        border-radius: 20px;
-        border: none;
-        cursor: pointer;
-        background-color:  #ffbaff;
-     }
-}
+
 .button-left:active{
     background-color:  #bc73bc;
 }
@@ -258,7 +251,7 @@ h3 {
     height: 50vh;
     overflow: hidden;
     position: relative;
-    left: 15%;
+    left: 20%;
     border-radius: 20px;
     margin-bottom: 50px;
 }
