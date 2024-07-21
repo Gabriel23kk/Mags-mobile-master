@@ -12,8 +12,9 @@
 
 body {
     background: linear-gradient(160deg, #f6e2f9, #ffbaff);
-    height: 170vh;
+    height: 180vh;
     z-index: -10;
+    
  }
 
 .icon{
@@ -133,13 +134,15 @@ h1 {
     z-index: 1;
     font-size: 52px;
     font-weight: 800;
-    left: 2.5%;
+    color: #ae4cfd;
+    left: 4%;
     font-family: "Kanit", sans-serif;
 }
 .texto{
     position: relative;
     top: 70px;
     left: 2%;
+    color: #ae4cfd;
     font-size: 24px;
     font-weight: 600;
     font-family: "Kanit", sans-serif;
@@ -176,6 +179,7 @@ h1 {
 h2 {
     padding-left: 10px;
     padding-top: 10px;
+    color: #ae4cfd;
 }
 .services{
     display: flex;
@@ -208,6 +212,7 @@ h3 {
    text-align: center;
    font-size: 45px;
    font-weight: 500;
+   color: #ae4cfd;
    font-family: "Titan One", sans-serif;
 }
 
@@ -247,24 +252,59 @@ h3 {
 }
 
 .galery{
-    width: 70vw;
+    width: 150vw;
     height: 50vh;
     overflow: hidden;
     position: relative;
-    left: 20%;
+    top: -2%;
+    left: 29%;
     border-radius: 20px;
     margin-bottom: 50px;
 }
+video {
+    visibility: hidden;
+    
+    position: relative;
+    top: -3px;
+    right: 22%;
+    width: 58%;
+    height: 10%;
+    border: none;
+    border-radius: 15px;
+}
+
+
+
+.next-prov{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    top: 10%;
+    
+}
+.nextb, .provb{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+
+}
+.next-prov button:active{
+    background-color: #a6a3a3;
+}
+
 
 .boxImage {
     transition: transform 0.5s ease-in-out;
     transform: translateX(0);
     display: flex;
-     img{
-        width: 70vw ;
-        object-fit: contain;
-        /* border-radius: 15px; */
-    }
+     
+}
+.boxImage img{
+    width: 70vw ;
+    
 }
 
 @media screen and (max-height: 350px){
@@ -288,13 +328,13 @@ h3 {
     }
 }
 footer img{
-    width: 120vw;
+    width: 125vw;
     position: relative;
     top: 5px;
 
 }
 footer {
     position: relative;
-    top: -23%;
+    top: -22%;
     width: 80%;
 }

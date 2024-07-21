@@ -15,8 +15,8 @@ function closeMenu(){
 }
 
                 //Trocar Imagens//
-const buttonLeft = document.querySelector(".button-left")
-const buttonRight = document.querySelector(".button-right")
+const buttonLeft = document.querySelector(".nextb")
+const buttonRight = document.querySelector(".provb")
 const imgs = document.querySelector(".boxImage")
 const imageAlter = document.querySelectorAll(".boxImage img")
 
@@ -31,7 +31,25 @@ function nextImage(){
 }
 
 setInterval(nextImage, 1500)
-buttonRight.addEventListener("click", previousImage)
-function previousImage(){
-    console.log("olá")
+
+
+buttonRight.addEventListener("click", next)
+let box = document.querySelector(".galery")
+let box2 = document.querySelector("video")
+function next(){
+    
+    box.classList.add("active")
+    
+
+    box2.classList.add("ativacion")
+    box2.style.visibility = "visible"
+}
+buttonLeft.addEventListener("click", prov)
+function prov(){
+    box.classList.remove("active")
+    box.classList.add("back")
+
+    box2.classList.remove("ativacion")
+    box2.classList.add("sair")
+    box2.style.visibility = "hidden"
 }
